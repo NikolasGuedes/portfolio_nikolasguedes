@@ -1,10 +1,9 @@
 import "./index.css";
-
-
+import HeaderPage from "./components/HeaderPage";
 function App() {
   return (
     <>
-     testeteste
+    <HeaderPage />
     </>
   );
 }

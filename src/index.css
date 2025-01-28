@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -90,10 +90,11 @@ button:focus-visible {}
 
 @layer base {
   :root {
-    --CinzaBase: #0F0F0F;
-    --AmareloBase: #F9A01B;
-    --CinzaClaro: #7C7C7C;
+    --CinzaBase: #0D0D0D;
+    --CorPrimaria: #6A00FF;
+    --CorSecundaria: #1D00FF;
     --CinzaEscuro: #2B2B2B;
+    --GradienteBase: linear-gradient(90deg, #6A00FF 0%, #1D00FF 100%);
     --background: 0 0% 6%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
