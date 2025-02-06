@@ -4,8 +4,10 @@ import MainSection from "./components/MainSection";
 function App() {
   return (
     <>
-    <HeaderPage />
-    <MainSection />
+      <div className="3xl:container 3xl:mx-auto">
+        <HeaderPage />
+        <MainSection />
+      </div>
     </>
   );
 }
