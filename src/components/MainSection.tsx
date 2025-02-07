@@ -46,7 +46,7 @@ function MainSection() {
         >
           <div className="flex flex-col items-center justify-end w-full h-[100%] px-20">
             <div className="flex flex-row items-center justify-end w-full h-[90%]">
-              <div className="flex flex-col items-start justify-start h-full w-[30%] py-32 gap-y-8">
+              <div className="flex flex-col items-start justify-start h-full w-[40%] py-32 gap-y-8">
                 <h1 className="font-black text-5xl text-justify">
                   HELLO WORLD <span className="font-black">|</span>
                 </h1>
@@ -64,16 +64,16 @@ function MainSection() {
                   printer took a galley of type and scrambled it to make a type
                   specimen book.
                 </p>
-                <div className="flex flex-col items-center justify-center h-full w-full">
+                <div className="flex flex-col items-start justify-center h-full w-full">
                   <img
                     src={Foto_Perfil}
                     alt="logo exata"
-                    className="flex items-center size-[18em]"
+                    className="flex items-center size-[18em] object-scale-down"
                   />
                 </div>
               </div>
 
-              <div className="flex flex-row items-center justify-end h-full w-[70%]">
+              <div className="flex flex-row items-center justify-end h-full w-[60%]">
                 <div className="w-[95%] h-[76%]">
                   <div className="bg-transparent rounded-2xl w-full h-full">
                     <div className="flex flex-col justify-center w-full h-full">

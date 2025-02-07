@@ -51,11 +51,6 @@ button {
 
 }
 
-button:hover {}
-
-button:focus,
-button:focus-visible {}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -82,7 +77,7 @@ button:focus-visible {}
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4D4D4D;
+  background: #6A00FF;
   border-radius: 4px;
   z-index: 999;
 }
