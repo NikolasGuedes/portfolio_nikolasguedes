@@ -2,14 +2,14 @@ import Logo_NK from "../img/NK_logo.png";
 
 function HeaderPage() {
   return (
-    <div className="z-50 fixed w-full px-20 max-lg:px-8 3xl:container 3xl:mx-auto py-2 bg-transparent">
+    <div className="z-50 fixed bg-black border border-white w-full px-20 max-lg:px-8 3xl:container 3xl:mx-auto py-2">
       <nav className="flex flex-row items-center w-full justify-between gap-10">
       <img
           src={Logo_NK}
           alt="logo exata"
           className="flex items-center size-min"
         />
-        <ul className="flex flex-row items-center gap-10 max-lg:hidden">
+        <ul className="flex flex-row items-center gap-10 max-lg:hidden border border-white">
           <li>
             <button
               className="font-normal text-xl tracking-wide relative after:absolute after:bottom-0 after:left-0 after:h-[7px] after:w-full after:origin-bottom-right after:scale-x-0  
