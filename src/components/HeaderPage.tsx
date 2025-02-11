@@ -2,7 +2,7 @@ import Logo_NK from "../img/NK_logo.png";
 
 function HeaderPage() {
   return (
-    <div className="z-50 fixed bg-black border border-white w-full px-20 max-lg:px-8 3xl:container 3xl:mx-auto py-2">
+    <div className="z-50 fixed bg-black border border-white w-[97%] px-20 max-lg:px-8 3xl:container 3xl:mx-auto py-2">
       <nav className="flex flex-row items-center w-full justify-between gap-10">
       <img
           src={Logo_NK}

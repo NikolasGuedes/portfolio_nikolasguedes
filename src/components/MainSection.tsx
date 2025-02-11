@@ -7,6 +7,7 @@ import { Marquee } from "@/components/ui/marquee";
 import Text_Marquee_Outline from "../img/text_marque_outline.png";
 import Text_Marquee from "../img/text_marque.png";
 import Tunel_Grid from "../img/tunel_grid.png";
+import Green_Dot from "../img/green_dot.png";
 
 import { ReactNode } from "react";
 
@@ -48,26 +49,60 @@ function MainSection() {
       </div>
 
       <div className="flex flex-col items-center justify-center w-full h-[80%]">
-        <div className="flex flex-row items-center justify-end w-full h-full">
-          <div className="flex flex-col items-start justify-start h-full w-[40%] border border-white py-32 gap-y-6 pl-20">
-            <h1 className="font-black text-5xl text-justify uppercase">
-              HELLO WORLD:
-            </h1>
-
-            <p className="font-bold bg-white text-[var(--CorPrimaria)] p-2 text-3xl rounded-lg">
-              Nikolas Guedes da Silva
-            </p>
-            <p className="text-justify w-[66%] border-white rounded-2xl border p-3">
-              and this is my portifolio. Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry.
-            </p>
-
-            <div className="flex flex-col items-start justify-end h-full w-full">
+        <div className="flex flex-row items-center justify-start w-full h-full">
+          <div className="flex flex-col items-center justify-start h-full w-[40%]  border border-white ">
+            <div className="bg-white w-[100%] h-[15%] mt-16 flex items-center px-10 justify-between">
+              <div className="flex items-center gap-x-2">
+                <img
+                  src={Green_Dot}
+                  alt="green dot"
+                  className=" size-5 object-contain"
+                />
+                <p className="text-black font-bold text-3xl">MY CHAT</p>
+              </div>
               <img
                 src={Foto_Perfil}
-                alt="logo exata"
-                className=" size-[18em] object-scale-down"
+                alt="Foto de Perfil"
+                className=" size-16 object-contain"
               />
+            </div>
+            <div className="w-[100%] h-full flex flex-col items-start px-10 justify-between">
+              <div className="w-[100%] h-full flex flex-col gap-y-5 mt-5">
+                <div className="flex flex-row items-center justify-start">
+                  <p className="font-light text-lg border p-2 border-white rounded-xl">
+                    Hi everyone!
+                  </p>
+                </div>
+                <div className="flex flex-row items-center justify-start">
+                  <p className="font-light text-lg border p-2 border-white rounded-xl">
+                    my name is{" "}
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--CorPrimaria)] to-[var(--CorSecundaria)] font-black text-xl">
+                      Nikolas Guedes
+                    </span>{" "}
+                    and this is my portifolio.
+                  </p>
+                </div>
+                <div className="flex flex-row items-center justify-start">
+                  <p className="font-light text-lg border p-2 border-white rounded-xl">
+                    Hope you liked =)
+                  </p>
+                </div>
+                {/* <div className="flex flex-row items-center justify-end">
+                  <p className="ffont-light text-lg border p-2 border-white rounded-xl">
+                    Lets talk!
+                  </p>
+                </div>
+                <div className="flex flex-row items-center justify-start">
+                  <p className="font-light text-lg border p-2 border-white rounded-xl">
+                   Awsome!
+                  </p>
+                </div>  */}
+              </div>
+              <div className="flex flex-row items-center justify-center my-5 w-full">
+                <p className="font-black text-lg border px-8 py-3 mb-2 text-black bg-white rounded-xl cursor-pointer">
+                  CONTACT ME
+                </p>
+              </div>
             </div>
           </div>
           <div className="flex flex-row items-center justify-center h-full w-[60%]">
@@ -203,7 +238,7 @@ function MainSection() {
         </div>
       </div>
       <div className="flex flex-row h-[20%] items-start justify-start w-full border border-white">
-        <div className="w-[15%] h-full">
+        <div className="w-[20%] h-full">
           <div className="relative w-full h-full border-r-2 border-white">
             <ShaderGradientCanvas
               style={{
@@ -224,21 +259,19 @@ function MainSection() {
                 alt="tunel grid"
                 className="size-full cursor-pointer"
               />
-             
             </div>
           </div>
         </div>
-        <div className="w-fit h-full">
-          <div className="flex flex-col w-full items-start justify-start h-full p-3 gap-y-2">
-            <p>STATUS</p>
-            <p>ENERGY</p>
-            <p>POWER</p>
-            <p>BEHAVIOR</p>
-          </div>
-        </div>
         <div className="w-full h-full">
-          <div className="flex flex-col items-end justify-end h-full pr-32">
-            <p>Morphing text aqui</p>
+          <div className="flex flex-col items-end justify-center h-full pr-22 text-[var(--CinzaEscuro)] text-xs p-3">
+            <div className="flex w-72 flex-col items-start justify-end gap-y-3">
+              <p>TERMINAL</p>
+              <div className="flex w-72 flex-col items-start justify-end gap-y-3">
+                <p>Loading stuff_</p>
+                <p>Probably broke something</p>
+                <p>checking for bugs_</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
