@@ -52,7 +52,7 @@ function MainSection() {
       <div className="flex flex-col items-center justify-center w-full h-[80%]">
         <div className="flex flex-row items-center justify-start w-full h-full">
           <div className="flex flex-col items-center justify-start h-full w-[40%]  border border-white ">
-            <div className="bg-white w-[100%] h-[15%] mt-16 flex items-center px-10 justify-between">
+            <div className="bg-white w-[100%] h-[15%] mt-[4.4rem] flex items-center px-10 justify-between">
               <div className="flex items-center gap-x-2">
                 <img
                   src={Green_Dot}
@@ -267,11 +267,6 @@ function MainSection() {
           <div className="flex w-full h-full p-2">
             <p>
               STATUS: <span className="pl-1 font-black">STEADY</span>
-            </p>
-          </div>
-          <div className="flex w-full h-full p-2">
-            <p>
-              ENERGY: <span className="pl-1 font-black">HIGH</span>
             </p>
           </div>
           <div className="flex flex-row items-start justify-start w-full h-full">
