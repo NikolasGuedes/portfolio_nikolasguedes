@@ -8,6 +8,7 @@ import Text_Marquee_Outline from "../img/text_marque_outline.png";
 import Text_Marquee from "../img/text_marque.png";
 import Tunel_Grid from "../img/tunel_grid.png";
 import Green_Dot from "../img/green_dot.png";
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
 
 import { ReactNode } from "react";
 
@@ -63,7 +64,7 @@ function MainSection() {
               <img
                 src={Foto_Perfil}
                 alt="Foto de Perfil"
-                className=" size-16 object-contain"
+                className=" size-14 items-center object-contain"
               />
             </div>
             <div className="w-[100%] h-full flex flex-col items-start px-10 justify-between">
@@ -260,6 +261,42 @@ function MainSection() {
                 className="size-full cursor-pointer"
               />
             </div>
+          </div>
+        </div>
+        <div className="w-[20%] h-full flex flex-col justify-between items-start gap-x-5 p-3">
+          <div className="flex w-full h-full p-2">
+            <p>
+              STATUS: <span className="pl-1 font-black">STEADY</span>
+            </p>
+          </div>
+          <div className="flex w-full h-full p-2">
+            <p>
+              ENERGY: <span className="pl-1 font-black">HIGH</span>
+            </p>
+          </div>
+          <div className="flex flex-row items-start justify-start w-full h-full">
+            <Player
+              autoplay
+              src="https://lottie.host/a7a1fb1f-8890-4c4f-bd89-d998690df07d/TM357qwJHu.json"
+              loop
+              style={{ width: "5em", height: "100%" }}
+            >
+              <Controls
+                visible={false}
+                buttons={["play", "repeat", "frame", "debug"]}
+              />
+            </Player>
+            <Player
+              autoplay
+              src="https://lottie.host/a7a1fb1f-8890-4c4f-bd89-d998690df07d/TM357qwJHu.json"
+              loop
+              style={{ width: "5em", height: "100%" }}
+            >
+              <Controls
+                visible={false}
+                buttons={["play", "repeat", "frame", "debug"]}
+              />
+            </Player>
           </div>
         </div>
         <div className="w-full h-full">

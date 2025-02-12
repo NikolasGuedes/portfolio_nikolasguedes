@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.6.0",
     "@radix-ui/react-slot": "^1.1.1",
     "@react-spring/three": "^9.7.5",
     "@react-three/fiber": "^8.17.12",
