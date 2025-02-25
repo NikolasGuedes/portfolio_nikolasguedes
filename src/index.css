@@ -30,7 +30,6 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: black;
-
 }
 
 h1 {
@@ -50,7 +49,7 @@ button {
 
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
   z-index: 999;
 }
 
@@ -60,7 +59,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: white;
+  background: #1D00FF;
   border-radius: 4px;
   z-index: 999;
 }
@@ -125,5 +124,18 @@ button {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+  }
+}
+
+
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }

@@ -10,11 +10,15 @@ function App() {
         <header>
           <HeaderPage />
         </header>
-        <SocialSection />
+        <section>
+          <SocialSection />
+        </section>
         <main>
           <MainSection />
         </main>
-        <SkillsSection />
+        <section>
+          <SkillsSection />
+        </section>
       </div>
     </>
   );
