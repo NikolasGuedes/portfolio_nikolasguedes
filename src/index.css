@@ -59,7 +59,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1D00FF;
+  background: white;
   border-radius: 4px;
   z-index: 999;
 }
