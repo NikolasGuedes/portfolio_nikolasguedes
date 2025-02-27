@@ -3,15 +3,12 @@ import HeaderPage from "./components/HeaderPage";
 import MainSection from "./components/MainSection";
 import SkillsSection from "./components/SkillsSection";
 import SocialSection from "./components/SocialSection";
-import { CustomCursor } from "@/components/ui/custom-cursor"
-
-
-
+import { CursorProvider } from "@/components/ui/CursorProvider";
 function App() {
  
   return (
     <>
-     <CustomCursor />
+     <CursorProvider>
       <div className="3xl:container 3xl:mx-auto">
         <header>
           <HeaderPage />
@@ -26,6 +23,7 @@ function App() {
           <SkillsSection />
         </section>
       </div>
+      </CursorProvider>
     </>
   );
 }
