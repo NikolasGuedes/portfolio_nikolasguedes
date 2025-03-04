@@ -94,7 +94,7 @@ function ProjectsSection() {
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="flex items-center justify-around flex-row flex-wrap gap-y-8 w-full h-full"
+        className="flex items-center justify-around flex-row flex-wrap gap-x-4 gap-y-8 w-full h-full"
       >
         <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
@@ -136,7 +136,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mt-2 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
             >
               Project Link
             </a>
@@ -181,7 +181,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mt-2 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
             >
               Project Link
             </a>
@@ -216,9 +216,7 @@ function ProjectsSection() {
             </div>
 
             <p className="py-4 text-white text-justify leading-6 px-6">
-              A TO-DO list web app with vibrant colors and a minimalist design.
-              I use localstorage to save the tasks and the user can change the
-              theme of the app.
+            A TO-DO list web application with vibrant colors and a minimalist design, using local storage to save tasks.
             </p>
           </CardDescription>
           <CardFooter className="flex-shrink-0 flex flex-col justify-center items-center w-full h-[3em]">
@@ -228,7 +226,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mt-2 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
             >
               Project Link
             </a>
@@ -274,7 +272,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mt-2 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
             >
               Project Link
             </a>
@@ -321,7 +319,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mt-2 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
             >
               Project Link
             </a>
@@ -367,7 +365,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mt-2 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
             >
               Project Link
             </a>
@@ -416,7 +414,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mt-2 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer text-center"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer text-center"
             >
               Project Link
             </a>
@@ -457,7 +455,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mt-2 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer text-center"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer text-center"
             >
               Project Link
             </a>
