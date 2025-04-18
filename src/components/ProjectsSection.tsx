@@ -78,7 +78,7 @@ function ProjectsSection() {
       ref={ref1}
       className="w-full h-fit 3xl:h-[80rem] container mx-auto px-0 py-36 mt-20 flex justify-start items-start flex-col"
     >
-      <div className="flex w-full h-full items-start justify-start flex-row py-8">
+      <div className="flex w-full h-full 2xl:h-fit max-sm:justify-center items-start justify-start flex-row  max-sm:py-10 py-4">
         <motion.p
           key={key + 1}
           initial={{ y: -100, opacity: 0 }}
@@ -98,7 +98,7 @@ function ProjectsSection() {
       >
         <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl" images={OLI} />
+            <ImageSwiper className="h-64 rounded-t-3xl bg-black opacity-70" images={OLI} />
           </CardContent>
           <CardHeader className="flex-shrink-0">
             <CardTitle className="text-2xl font-semibold text-white">
@@ -144,7 +144,7 @@ function ProjectsSection() {
         </Card>
         <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl" images={PORTFOLIO} />
+            <ImageSwiper className="h-64 rounded-t-3xl bg-black opacity-70" images={PORTFOLIO} />
           </CardContent>
           <CardHeader className="flex-shrink-0">
             <CardTitle className="text-2xl font-semibold text-white">
@@ -189,7 +189,7 @@ function ProjectsSection() {
         </Card>
         <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl" images={TAREFINHAS} />
+            <ImageSwiper className="h-64 rounded-t-3xl bg-black opacity-70" images={TAREFINHAS} />
           </CardContent>
           <CardHeader className="flex-shrink-0">
             <CardTitle className="text-2xl font-semibold text-white">
@@ -234,7 +234,7 @@ function ProjectsSection() {
         </Card>
         <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl" images={TAREFINHASV2} />
+            <ImageSwiper className="h-64 rounded-t-3xl bg-black opacity-70" images={TAREFINHASV2} />
           </CardContent>
           <CardHeader className="flex-shrink-0">
             <CardTitle className="text-2xl font-semibold text-white">
@@ -280,7 +280,7 @@ function ProjectsSection() {
         </Card>
         <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl" images={JOKENPOKEMON} />
+            <ImageSwiper className="h-64 rounded-t-3xl bg-black opacity-70" images={JOKENPOKEMON} />
           </CardContent>
           <CardHeader className="flex-shrink-0">
             <CardTitle className="text-2xl font-semibold text-white">
@@ -327,7 +327,7 @@ function ProjectsSection() {
         </Card>
         <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl" images={NKSTUDIO} />
+            <ImageSwiper className="h-64 rounded-t-3xl bg-black opacity-70" images={NKSTUDIO} />
           </CardContent>
           <CardHeader className="flex-shrink-0">
             <CardTitle className="text-2xl font-semibold text-white">
@@ -374,7 +374,7 @@ function ProjectsSection() {
         <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
             <ImageSwiper
-              className="h-64 rounded-t-3xl"
+              className="h-64 rounded-t-3xl bg-black opacity-70"
               images={ALGORITHMEXER}
             />
           </CardContent>
@@ -422,7 +422,7 @@ function ProjectsSection() {
         </Card>
         <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl" images={SEVENDAYS} />
+            <ImageSwiper className="h-64 rounded-t-3xl bg-black opacity-70" images={SEVENDAYS} />
           </CardContent>
           <CardHeader className="flex-shrink-0">
             <CardTitle className="text-2xl font-semibold text-white">

@@ -45,7 +45,7 @@ function SkillsSection() {
       ref={ref1}
       className="w-full h-fit 3xl:h-[80rem] container mx-auto px-0 py-36 mt-20 flex justify-start items-start flex-col"
     >
-      <div className="flex w-full h-full 2xl:h-fit items-start justify-start flex-row py-4">
+      <div className="flex w-full h-full 2xl:h-fit max-sm:justify-center items-start justify-start flex-row  max-sm:py-10 py-4">
         <motion.p
          key={key + 1}
           initial={{ y: -100, opacity: 0 }}

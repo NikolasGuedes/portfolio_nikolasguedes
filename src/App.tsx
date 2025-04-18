@@ -4,6 +4,8 @@ import MainSection from "./components/MainSection";
 import SkillsSection from "./components/SkillsSection";
 import SocialSection from "./components/SocialSection";
 import ProjectsSection from "./components/ProjectsSection";
+import AboutSection from "./components/AboutSection";
+import ExperienceSection from "./components/ExperinceSection";
 import { CursorProvider } from "@/components/ui/CursorProvider";
 import Elipse_01 from "../src/img/Ellipse_01.png";
 import Elipse_02 from "../src/img/Ellipse_02.png";
@@ -34,9 +36,9 @@ function App() {
 
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: [0.6, 0.9, 0.6] }}
-        transition={{ duration: 2, repeat: Infinity, smooth: true, delay: 0.5 }}
-        className="-z-10 absolute bottom-[35em] right-[35em] h-[13em] w-[23em] rounded-full bg-gradient-to-br from-[var(--CorPrimaria)] via-[var(--CorTerciaria)] to-[var(--CorPrimaria)] opacity-[0.3] blur-3xl"
+        animate={{ opacity: [0.3, 0.6, 0.3] }}
+        transition={{ duration: 300, repeat: Infinity, smooth: true, delay: 0.5 }}
+        className="-z-10 absolute bottom-[18em] right-[45em] h-[20em] w-[30em] rounded-full bg-gradient-to-br from-[var(--CorPrimaria)] via-[var(--CorTerciaria)] to-[var(--CorPrimaria)] opacity-[0.3] blur-3xl"
       ></motion.div>
 
       <div className="-z-10 fixed top-0 left-0 w-full h-full bg-clip-padding backdrop-filter bg-black backdrop-blur-lg bg-opacity-50 "></div>
@@ -51,6 +53,12 @@ function App() {
           <main id="HOME">
             <MainSection />
           </main>
+          <section id="ABOUT">
+            <AboutSection />
+          </section>
+          <section id="EXPERIENCE">
+            <ExperienceSection />
+          </section>
           <section id="SKILLS">
             <SkillsSection />
           </section>

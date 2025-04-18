@@ -22,12 +22,19 @@ function HeaderPage() {
     >
       <nav className="flex flex-row items-center w-full justify-between gap-10">
         <img
+          onClick={() => scrollToSection("HOME")}
+          onMouseEnter={() => setCursorVariant("sm")}
+          onMouseLeave={() => setCursorVariant("default")}
           src={Logo_NK}
           alt="logo exata"
-          className="flex items-center w-fit h-[2em] cursor-pointer"
+          className="flex items-center w-fit h-[2em] cursor-pointer relative after:absolute after:bottom-0 after:left-0 
+        after:h-[3px] bg-transparent after:w-full after:origin-bottom-right after:scale-x-0 
+        after:bg-white after:transition-transform after:duration-300 
+        after:ease-[cubic-bezier(0.65_0.05_0.36_1)] 
+        hover:after:origin-bottom-left hover:after:scale-x-100"
         />
         <ul className="flex flex-row items-center gap-10 max-lg:hidden">
-          {["HOME", "SKILLS", "PROJECTS", "CONTACT"].map((text) => (
+          {["ABOUT", "SKILLS", "PROJECTS"].map((text) => (
             <li key={text}>
               <button
                 onClick={() => scrollToSection(text)}
