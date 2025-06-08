@@ -136,7 +136,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
             </a>
@@ -181,7 +181,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
             </a>
@@ -226,7 +226,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
             </a>
@@ -272,7 +272,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
             </a>
@@ -319,7 +319,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
             </a>
@@ -365,7 +365,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
             </a>
@@ -414,7 +414,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl  text-center"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl  text-center"
             >
               Project Link
             </a>
@@ -455,7 +455,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl  text-center"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl  text-center"
             >
               Project Link
             </a>
