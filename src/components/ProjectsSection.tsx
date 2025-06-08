@@ -84,7 +84,7 @@ function ProjectsSection() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className="px-4 py-2 border self-start border-white rounded-3xl"
+          className="px-4 py-2 border self-start border-[var(--CorPrimaria)] rounded-3xl"
         >
           Some of my projects:
         </motion.p>
@@ -96,9 +96,9 @@ function ProjectsSection() {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="flex items-center justify-around flex-row flex-wrap gap-x-4 gap-y-8 w-full h-full"
       >
-        <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl bg-black opacity-70" images={OLI} />
+            <ImageSwiper className="h-64 rounded-t-3xl " images={OLI} />
           </CardContent>
           <CardHeader className="flex-shrink-0">
             <CardTitle className="text-2xl font-semibold text-white">
@@ -136,15 +136,15 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
             </a>
           </CardFooter>
         </Card>
-        <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl bg-black opacity-70" images={PORTFOLIO} />
+            <ImageSwiper className="h-64 rounded-t-3xl " images={PORTFOLIO} />
           </CardContent>
           <CardHeader className="flex-shrink-0">
             <CardTitle className="text-2xl font-semibold text-white">
@@ -181,15 +181,15 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
             </a>
           </CardFooter>
         </Card>
-        <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl bg-black opacity-70" images={TAREFINHAS} />
+            <ImageSwiper className="h-64 rounded-t-3xl " images={TAREFINHAS} />
           </CardContent>
           <CardHeader className="flex-shrink-0">
             <CardTitle className="text-2xl font-semibold text-white">
@@ -226,15 +226,15 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
             </a>
           </CardFooter>
         </Card>
-        <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl bg-black opacity-70" images={TAREFINHASV2} />
+            <ImageSwiper className="h-64 rounded-t-3xl " images={TAREFINHASV2} />
           </CardContent>
           <CardHeader className="flex-shrink-0">
             <CardTitle className="text-2xl font-semibold text-white">
@@ -272,15 +272,15 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
             </a>
           </CardFooter>
         </Card>
-        <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl bg-black opacity-70" images={JOKENPOKEMON} />
+            <ImageSwiper className="h-64 rounded-t-3xl " images={JOKENPOKEMON} />
           </CardContent>
           <CardHeader className="flex-shrink-0">
             <CardTitle className="text-2xl font-semibold text-white">
@@ -319,15 +319,15 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
             </a>
           </CardFooter>
         </Card>
-        <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl bg-black opacity-70" images={NKSTUDIO} />
+            <ImageSwiper className="h-64 rounded-t-3xl " images={NKSTUDIO} />
           </CardContent>
           <CardHeader className="flex-shrink-0">
             <CardTitle className="text-2xl font-semibold text-white">
@@ -365,16 +365,16 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
             </a>
           </CardFooter>
         </Card>
-        <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
             <ImageSwiper
-              className="h-64 rounded-t-3xl bg-black opacity-70"
+              className="h-64 rounded-t-3xl "
               images={ALGORITHMEXER}
             />
           </CardContent>
@@ -414,15 +414,15 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer text-center"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl  text-center"
             >
               Project Link
             </a>
           </CardFooter>
         </Card>
-        <Card className="w-[370px] h-[580px] border border-white rounded-3xl bg-transparent flex flex-col">
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
           <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl bg-black opacity-70" images={SEVENDAYS} />
+            <ImageSwiper className="h-64 rounded-t-3xl " images={SEVENDAYS} />
           </CardContent>
           <CardHeader className="flex-shrink-0">
             <CardTitle className="text-2xl font-semibold text-white">
@@ -455,7 +455,7 @@ function ProjectsSection() {
               rel="noopener noreferrer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
-              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border mb-10 bg-white text-black hover:text-black border-white rounded-3xl cursor-pointer text-center"
+              className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 bg-white text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl  text-center"
             >
               Project Link
             </a>

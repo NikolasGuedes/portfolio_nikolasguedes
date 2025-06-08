@@ -19,7 +19,7 @@ function AboutSection() {
         transition={{ duration: 1 }}
         className="w-full md:w-1/2 flex flex-col items-start justify-center gap-6"
       >
-        <p className="px-4 py-2 border self-start border-white rounded-3xl mb-4">
+        <p className="px-4 py-2 border self-start border-[var(--CorPrimaria)] rounded-3xl mb-4">
           About me
         </p>
         <p className="text-lg md:text-xl leading-relaxed font-thin text-start">
@@ -34,7 +34,7 @@ function AboutSection() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: isInView1 ? 1 : 0, y: isInView1 ? 0 : 100 }}
         transition={{ duration: 1 }}
-        className="w-full md:w-[35%] lg:w-[30%] h-[30rem] border border-white rounded-3xl flex flex-col items-center justify-evenly p-8 "
+        className="w-full md:w-[35%] lg:w-[30%] h-[30rem] border border-[var(--CorPrimaria)] rounded-3xl flex flex-col items-center justify-evenly p-8 "
       >
         <div className="relative z-10 flex flex-col items-center justify-evenly h-full w-full">
           <img

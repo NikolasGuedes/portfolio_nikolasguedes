@@ -2,14 +2,12 @@ import HTML from "../img/icones_skills/html.png";
 import JAVASCRIPT from "../img/icones_skills/js.png";
 import FIGMA from "../img/icones_skills/figma.png";
 import TAILWIND from "../img/icones_skills/tailwind.png";
-import DJANGO from "../img/icones_skills/django.png";
-import FRAMER from "../img/icones_skills/framer.png";
 import REACT from "../img/icones_skills/reactjs.png";
-import SASS from "../img/icones_skills/sass.png";
-import PYTHON from "../img/icones_skills/python.png";
 import UNITY from "../img/icones_skills/unity.png";
+import LARAVEL from "../img/icones_skills/laravel.png";
+import PHP from "../img/icones_skills/php.png";
+import VUE from "../img/icones_skills/vue.png";
 import C_SHARP from "../img/icones_skills/csharp.png"; 
-import CSS from "../img/icones_skills/css.png";
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 
@@ -31,12 +29,10 @@ function SkillsSection() {
     { name: "FIGMA", img: FIGMA },
     { name: "TAILWIND", img: TAILWIND },
     { name: "UNITY", img: UNITY },
-    { name: "DJANGO", img: DJANGO },
-    { name: "FRAMER", img: FRAMER },
+    { name: "LARAVEL", img: LARAVEL },
+    { name: "PHP", img: PHP },
     { name: "REACT", img: REACT },
-    { name: "SASS", img: SASS },
-    { name: "PYTHON", img: PYTHON },
-    { name: "CSS", img: CSS },
+    { name: "VUE", img: VUE },
     { name: "C#", img: C_SHARP },
   ];
 
@@ -51,25 +47,25 @@ function SkillsSection() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className="px-4 py-2 border self-start border-white rounded-3xl"
+          className="px-4 py-2 border self-start border-[var(--CorPrimaria)] rounded-3xl"
         >
           I have knowledge in:
         </motion.p>
       </div>
-      <div className="flex items-center justify-evenly flex-row flex-wrap gap-4 w-full h-full">
+      <div className="flex items-center max-lg:justify-center justify-start flex-row flex-wrap gap-4 w-full h-full">
         {skills.map((skill, index) => (
           <motion.div
             key={`${skill.name}-${isInView1}`}
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 * index }}
-            className="border flex flex-col items-center justify-evenly border-white rounded-3xl h-[15em] w-[15em]"
+            className="border flex flex-col items-center justify-evenly bg-[var(--CorPrimaria)] rounded-3xl h-[15em] w-[15em]"
           >
             <p>{skill.name}</p>
             <img
               src={skill.img}
               alt={skill.name}
-              className="flex items-center w-fit h-[6em]"
+              className="flex items-center w-[5.2em] h-[6em]"
             />
           </motion.div>
         ))}

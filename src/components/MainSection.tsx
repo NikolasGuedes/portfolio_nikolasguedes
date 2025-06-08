@@ -22,12 +22,12 @@ function MainSection() {
         {isInView1 && (
           <div className="flex flex-col w-full px-10 h-full  justify-between items-center">
             <div className="flex flex-col items-center justify-center w-full h-full">
-              <div className="flex flex-row justify-center items-center max-sm:w-[80%] h-fit bg-white rounded-t-3xl">
-                <p className="self-center max-sm:text-sm text-center text-black text-lg max-sm:px-0 px-10 py-2">
+              <div className="flex flex-row justify-center items-center max-sm:w-[80%] h-fit bg-[var(--CorPrimaria)] rounded-t-3xl">
+                <p className="self-center max-sm:text-sm text-center text-white text-lg max-sm:px-0 px-20 py-2">
                   Hello Everyone! I'm a:
                 </p>
               </div>
-              <div className="px-4 py-2 border self-center font-bold border-white rounded-3xl w-[60%] max-sm:w-full">
+              <div className="px-4 py-2 border self-center font-bold border-[var(--CorPrimaria)] rounded-3xl w-[60%] max-sm:w-full">
                 <WordRotate
                   words={texts}
                   className="max-sm:text-sm"

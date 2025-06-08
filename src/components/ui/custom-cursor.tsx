@@ -79,7 +79,7 @@ export function CustomCursor({
   return (
     <motion.div
       className={cn(
-        " pointer-events-none fixed left-0 top-0 z-50 flex aspect-square min-h-8 items-center justify-center rounded-full bg-white px-1 text-center text-xs mix-blend-difference",
+        " pointer-events-none fixed left-0 top-0 z-[60] flex aspect-square min-h-8 items-center justify-center rounded-full bg-white px-1 text-center text-xs mix-blend-difference",
         className
       )}
       variants={customCursorVariants}
