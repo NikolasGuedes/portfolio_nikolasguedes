@@ -13,7 +13,7 @@ function SocialSection() {
       animate={{ opacity: 1 }}
       transition={{ duration: 2,  delay: 0.3 }}
       className="z-40 fixed bottom-0 bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 
-      w-fit max-lg:w-[70%] left-1/2 transform -translate-x-1/2 border border-[var(--CorPrimaria)] flex justify-center rounded-full container px-4 py-2 mx-auto mb-6"
+      w-fit max-lg:w-[70%] left-1/2 transform -translate-x-1/2 border-2 border-[var(--CorPrimaria)] flex justify-center rounded-full container px-4 py-2 mx-auto mb-6"
     >
       <nav className="flex flex-row items-center w-full justify-center gap-12">
         {[

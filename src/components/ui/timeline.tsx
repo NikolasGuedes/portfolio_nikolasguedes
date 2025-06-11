@@ -9,24 +9,55 @@ interface TimelineEntry {
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [height, setHeight] = useState(0);
+  const [height, setHeight] = useState(1000); // Altura inicial maior para garantir que a linha apareça
   const isInView1 = useInView(ref);
 
   const updateHeight = () => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect();
-      setHeight(rect.height);
+      if (rect.height > 0) {
+        setHeight(rect.height);
+      }
     }
   };
 
   useEffect(() => {
-    updateHeight();
+    // Múltiplas tentativas para calcular a altura correta
+    const calculateHeight = () => {
+      requestAnimationFrame(() => {
+        updateHeight();
+        // Segunda tentativa após um pequeno delay
+        setTimeout(() => {
+          updateHeight();
+        }, 100);
+      });
+    };
+
+    calculateHeight();
     window.addEventListener("resize", updateHeight);
 
     return () => {
       window.removeEventListener("resize", updateHeight);
     };
-  }, [ref]);
+  }, []);
+
+  // Recalcula quando os dados mudam
+  useEffect(() => {
+    if (data.length > 0) {
+      setTimeout(() => {
+        updateHeight();
+      }, 200);
+    }
+  }, [data]);
+
+  // Recalcula quando o componente entra na view
+  useEffect(() => {
+    if (isInView1) {
+      setTimeout(() => {
+        updateHeight();
+      }, 300);
+    }
+  }, [isInView1]);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -47,7 +78,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         transition={{ duration: 1 }}
         className="max-w-7xl font-bold mx-auto  px-4 md:px-8 lg:px-10 flex flex-col items-center justify-center"
       >
-        <h2 className="px-4 py-2 border self-center border-[var(--CorPrimaria)] rounded-3xl mb-4">
+        <h2 className="px-4 py-2 border-2 self-center border-[var(--CorPrimaria)] rounded-3xl mb-4">
           My Journey
         </h2>
       </motion.div>

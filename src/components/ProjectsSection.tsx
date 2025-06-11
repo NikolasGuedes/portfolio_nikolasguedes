@@ -4,7 +4,6 @@ import { ImageSwiper } from "@/components/ui/image-swiper";
 import {
   Card,
   CardContent,
-  CardHeader,
   CardTitle,
   CardFooter,
   CardDescription,
@@ -14,7 +13,6 @@ import UNITY from "../img/icones_skills/unity.png";
 import C_SHARP from "../img/icones_skills/csharp.png";
 import HTML from "../img/icones_skills/html.png";
 import JAVASCRIPT from "../img/icones_skills/js.png";
-import FIGMA from "../img/icones_skills/figma.png";
 import SASS from "../img/icones_skills/sass.png";
 import ANGULAR from "../img/icones_skills/angular.png";
 import CSHARP from "../img/icones_skills/csharp.png";
@@ -84,7 +82,7 @@ function ProjectsSection() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className="px-4 py-2 border self-start border-[var(--CorPrimaria)] rounded-3xl"
+          className="px-4 py-2 border-2 self-start border-[var(--CorPrimaria)] rounded-3xl"
         >
           Some of my projects:
         </motion.p>
@@ -96,32 +94,29 @@ function ProjectsSection() {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="flex items-center justify-around flex-row flex-wrap gap-x-4 gap-y-8 w-full h-full"
       >
-        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
-          <CardContent className="p-0 flex-shrink-0">
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl flex flex-col max-sm:w-[340px]">
+          <CardContent className="p-2 flex-shrink-0 my-1">
             <ImageSwiper className="h-64 rounded-t-3xl " images={OLI} />
           </CardContent>
-          <CardHeader className="flex-shrink-0">
+          <div className="flex-shrink-0 my-1">
             <CardTitle className="text-2xl font-semibold text-white">
               OLI
             </CardTitle>
-          </CardHeader>
-          <CardDescription className="flex-grow">
-            <div className="w-full flex items-center justify-start gap-x-4 px-6">
-              <img
-                src={UNITY}
-                alt="logo UNITY"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={C_SHARP}
-                alt="logo CSHARP"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={FIGMA}
-                alt="logo FIGMA"
-                className="flex items-center w-fit h-[2em]"
-              />
+          </div>
+          <CardDescription className="flex-grow mt-3">
+            <div className="w-full flex items-center justify-center gap-x-4 px-6">
+              <div className="flex gap-x-8 px-4 py-2 rounded-2xl bg-[var(--CorQuartenaria)]">
+                <img
+                  src={UNITY}
+                  alt="logo UNITY"
+                  className="flex items-center w-fit h-[2em]"
+                />
+                <img
+                  src={C_SHARP}
+                  alt="logo CSHARP"
+                  className="flex items-center w-fit h-[2em]"
+                />
+              </div>
             </div>
 
             <p className="py-4 text-white text-justify leading-6 px-6">
@@ -129,7 +124,7 @@ function ProjectsSection() {
               "INSIDE". The game is available on STEAM for free!
             </p>
           </CardDescription>
-          <CardFooter className="flex-shrink-0 flex flex-col justify-center items-center w-full h-[3em]">
+          <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
             <a
               href="https://store.steampowered.com/app/1794530/OLI/?l=english"
               target="_blank"
@@ -142,39 +137,41 @@ function ProjectsSection() {
             </a>
           </CardFooter>
         </Card>
-        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
-          <CardContent className="p-0 flex-shrink-0">
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col max-sm:w-[330px]">
+          <CardContent className="p-2 flex-shrink-0 my-1">
             <ImageSwiper className="h-64 rounded-t-3xl " images={PORTFOLIO} />
           </CardContent>
-          <CardHeader className="flex-shrink-0">
+          <div className="flex-shrink-0 my-1">
             <CardTitle className="text-2xl font-semibold text-white">
               PORTFOLIO SITE
             </CardTitle>
-          </CardHeader>
-          <CardDescription className="flex-grow">
-            <div className="w-full flex items-center justify-start gap-x-4 px-6">
-              <img
-                src={REACT}
-                alt="logo UNITY"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={TAILWIND}
-                alt="logo CSHARP"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={TYPESCRIPT}
-                alt="logo FIGMA"
-                className="flex items-center w-fit h-[2em]"
-              />
+          </div>
+          <CardDescription className="flex-grow mt-3">
+            <div className="w-full flex items-center justify-center gap-x-4 px-6">
+              <div className="flex gap-x-8 px-4 py-2 rounded-2xl bg-[var(--CorQuartenaria)]">
+                <img
+                  src={REACT}
+                  alt="logo UNITY"
+                  className="flex items-center w-fit h-[2em]"
+                />
+                <img
+                  src={TAILWIND}
+                  alt="logo CSHARP"
+                  className="flex items-center w-fit h-[2em]"
+                />
+                <img
+                  src={TYPESCRIPT}
+                  alt="logo FIGMA"
+                  className="flex items-center w-fit h-[2em]"
+                />
+              </div>
             </div>
 
             <p className="py-4 text-white text-justify leading-6 px-6">
               my portfolio website, using a framework and Motion for animations.
             </p>
           </CardDescription>
-          <CardFooter className="flex-shrink-0 flex flex-col justify-center items-center w-full h-[3em]">
+          <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
             <a
               href="https://nikolasguedes.github.io/portfolio_nikolasguedes/"
               target="_blank"
@@ -187,39 +184,42 @@ function ProjectsSection() {
             </a>
           </CardFooter>
         </Card>
-        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
-          <CardContent className="p-0 flex-shrink-0">
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col max-sm:w-[330px]">
+          <CardContent className="p-2 flex-shrink-0 my-1">
             <ImageSwiper className="h-64 rounded-t-3xl " images={TAREFINHAS} />
           </CardContent>
-          <CardHeader className="flex-shrink-0">
+          <div className="flex-shrink-0 my-1">
             <CardTitle className="text-2xl font-semibold text-white">
               TAREFINHAS
             </CardTitle>
-          </CardHeader>
-          <CardDescription className="flex-grow">
-            <div className="w-full flex items-center justify-start gap-x-4 px-6">
-              <img
-                src={HTML}
-                alt="logo HTML"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={CSS}
-                alt="logo CSS"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={JAVASCRIPT}
-                alt="logo JAVASCRIPT"
-                className="flex items-center w-fit h-[2em]"
-              />
+          </div>
+          <CardDescription className="flex-grow mt-3">
+            <div className="w-full flex items-center justify-center gap-x-4 px-6">
+              <div className="flex gap-x-8 px-4 py-2 rounded-2xl bg-[var(--CorQuartenaria)]">
+                <img
+                  src={HTML}
+                  alt="logo HTML"
+                  className="flex items-center w-fit h-[2em]"
+                />
+                <img
+                  src={CSS}
+                  alt="logo CSS"
+                  className="flex items-center w-fit h-[2em]"
+                />
+                <img
+                  src={JAVASCRIPT}
+                  alt="logo JAVASCRIPT"
+                  className="flex items-center w-fit h-[2em]"
+                />
+              </div>
             </div>
 
             <p className="py-4 text-white text-justify leading-6 px-6">
-            A TO-DO list web application with vibrant colors and a minimalist design, using local storage to save tasks.
+              A TO-DO list web application with vibrant colors and a minimalist
+              design, using local storage to save tasks.
             </p>
           </CardDescription>
-          <CardFooter className="flex-shrink-0 flex flex-col justify-center items-center w-full h-[3em]">
+          <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
             <a
               href="https://tarefinhas-navy.vercel.app/"
               target="_blank"
@@ -232,32 +232,37 @@ function ProjectsSection() {
             </a>
           </CardFooter>
         </Card>
-        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
-          <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl " images={TAREFINHASV2} />
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col max-sm:w-[330px]">
+          <CardContent className="p-2 flex-shrink-0 my-1">
+            <ImageSwiper
+              className="h-64 rounded-t-3xl "
+              images={TAREFINHASV2}
+            />
           </CardContent>
-          <CardHeader className="flex-shrink-0">
+          <div className="flex-shrink-0 my-1">
             <CardTitle className="text-2xl font-semibold text-white">
               TAREFINHAS V2
             </CardTitle>
-          </CardHeader>
-          <CardDescription className="flex-grow">
-            <div className="w-full flex items-center justify-start gap-x-4 px-6">
-              <img
-                src={ANGULAR}
-                alt="logo HTML"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={SASS}
-                alt="logo CSS"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={CSHARP}
-                alt="logo JAVASCRIPT"
-                className="flex items-center w-fit h-[2em]"
-              />
+          </div>
+          <CardDescription className="flex-grow mt-3">
+            <div className="w-full flex items-center justify-center gap-x-4 px-6">
+              <div className="flex gap-x-8 px-4 py-2 rounded-2xl bg-[var(--CorQuartenaria)]">
+                <img
+                  src={ANGULAR}
+                  alt="logo HTML"
+                  className="flex items-center w-fit h-[2em]"
+                />
+                <img
+                  src={SASS}
+                  alt="logo CSS"
+                  className="flex items-center w-fit h-[2em]"
+                />
+                <img
+                  src={CSHARP}
+                  alt="logo JAVASCRIPT"
+                  className="flex items-center w-fit h-[2em]"
+                />
+              </div>
             </div>
 
             <p className="py-4 text-white text-justify leading-6 px-6">
@@ -265,7 +270,7 @@ function ProjectsSection() {
               and an API.
             </p>
           </CardDescription>
-          <CardFooter className="flex-shrink-0 flex flex-col justify-center items-center w-full h-[3em]">
+          <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
             <a
               href="https://github.com/NikolasGuedes/TarefinhasV2"
               target="_blank"
@@ -278,32 +283,37 @@ function ProjectsSection() {
             </a>
           </CardFooter>
         </Card>
-        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
-          <CardContent className="p-0 flex-shrink-0">
-            <ImageSwiper className="h-64 rounded-t-3xl " images={JOKENPOKEMON} />
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col max-sm:w-[330px]">
+          <CardContent className="p-2 flex-shrink-0 my-1">
+            <ImageSwiper
+              className="h-64 rounded-t-3xl "
+              images={JOKENPOKEMON}
+            />
           </CardContent>
-          <CardHeader className="flex-shrink-0">
+          <div className="flex-shrink-0 my-1">
             <CardTitle className="text-2xl font-semibold text-white">
               JO KEN PÔ KEMON
             </CardTitle>
-          </CardHeader>
-          <CardDescription className="flex-grow">
-            <div className="w-full flex items-center justify-start gap-x-4 px-6">
-              <img
-                src={HTML}
-                alt="logo HTML"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={CSS}
-                alt="logo CSS"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={JAVASCRIPT}
-                alt="logo JAVASCRIPT"
-                className="flex items-center w-fit h-[2em]"
-              />
+          </div>
+          <CardDescription className="flex-grow mt-3">
+            <div className="w-full flex items-center justify-center gap-x-4 px-6">
+              <div className="flex gap-x-8 px-4 py-2 rounded-2xl bg-[var(--CorQuartenaria)]">
+                <img
+                  src={HTML}
+                  alt="logo HTML"
+                  className="flex items-center w-fit h-[2em]"
+                />
+                <img
+                  src={CSS}
+                  alt="logo CSS"
+                  className="flex items-center w-fit h-[2em]"
+                />
+                <img
+                  src={JAVASCRIPT}
+                  alt="logo JAVASCRIPT"
+                  className="flex items-center w-fit h-[2em]"
+                />
+              </div>
             </div>
 
             <p className="py-4 text-white text-justify leading-6 px-6">
@@ -312,7 +322,7 @@ function ProjectsSection() {
               available in the end.
             </p>
           </CardDescription>
-          <CardFooter className="flex-shrink-0 flex flex-col justify-center items-center w-full h-[3em]">
+          <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
             <a
               href="https://nikolasguedes.github.io/Site_jokenpo_kemon/"
               target="_blank"
@@ -325,32 +335,34 @@ function ProjectsSection() {
             </a>
           </CardFooter>
         </Card>
-        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
-          <CardContent className="p-0 flex-shrink-0">
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col max-sm:w-[330px]">
+          <CardContent className="p-2 flex-shrink-0 my-1">
             <ImageSwiper className="h-64 rounded-t-3xl " images={NKSTUDIO} />
           </CardContent>
-          <CardHeader className="flex-shrink-0">
+          <div className="flex-shrink-0 my-1">
             <CardTitle className="text-2xl font-semibold text-white">
               NKSTUDIO WEBSITE
             </CardTitle>
-          </CardHeader>
-          <CardDescription className="flex-grow">
-            <div className="w-full flex items-center justify-start gap-x-4 px-6">
-              <img
-                src={HTML}
-                alt="logo HTML"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={CSS}
-                alt="logo CSS"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={JAVASCRIPT}
-                alt="logo JAVASCRIPT"
-                className="flex items-center w-fit h-[2em]"
-              />
+          </div>
+          <CardDescription className="flex-grow mt-3">
+            <div className="w-full flex items-center justify-center gap-x-4 px-6">
+              <div className="flex gap-x-8 px-4 py-2 rounded-2xl bg-[var(--CorQuartenaria)]">
+                <img
+                  src={HTML}
+                  alt="logo HTML"
+                  className="flex items-center w-fit h-[2em]"
+                />
+                <img
+                  src={CSS}
+                  alt="logo CSS"
+                  className="flex items-center w-fit h-[2em]"
+                />
+                <img
+                  src={JAVASCRIPT}
+                  alt="logo JAVASCRIPT"
+                  className="flex items-center w-fit h-[2em]"
+                />
+              </div>
             </div>
 
             <p className="py-4 text-white text-justify leading-6 px-6">
@@ -358,7 +370,7 @@ function ProjectsSection() {
               related an games.
             </p>
           </CardDescription>
-          <CardFooter className="flex-shrink-0 flex flex-col justify-center items-center w-full h-[3em]">
+          <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
             <a
               href="https://site-nkstudiogames.vercel.app/index.html#home"
               target="_blank"
@@ -371,35 +383,37 @@ function ProjectsSection() {
             </a>
           </CardFooter>
         </Card>
-        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
-          <CardContent className="p-0 flex-shrink-0">
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col max-sm:w-[330px]">
+          <CardContent className="p-2 flex-shrink-0 my-1">
             <ImageSwiper
               className="h-64 rounded-t-3xl "
               images={ALGORITHMEXER}
             />
           </CardContent>
-          <CardHeader className="flex-shrink-0">
+          <div className="flex-shrink-0 my-1">
             <CardTitle className="text-2xl font-semibold text-white">
               ALGORITHM EXER
             </CardTitle>
-          </CardHeader>
-          <CardDescription className="flex-grow">
-            <div className="w-full flex items-center justify-start gap-x-4 px-6">
-              <img
-                src={HTML}
-                alt="logo HTML"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={CSS}
-                alt="logo CSS"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={JAVASCRIPT}
-                alt="logo JAVASCRIPT"
-                className="flex items-center w-fit h-[2em]"
-              />
+          </div>
+          <CardDescription className="flex-grow mt-3">
+            <div className="w-full flex items-center justify-center gap-x-4 px-6">
+              <div className="flex gap-x-8 px-4 py-2 rounded-2xl bg-[var(--CorQuartenaria)]">
+                <img
+                  src={HTML}
+                  alt="logo HTML"
+                  className="flex items-center w-fit h-[2em]"
+                />
+                <img
+                  src={CSS}
+                  alt="logo CSS"
+                  className="flex items-center w-fit h-[2em]"
+                />
+                <img
+                  src={JAVASCRIPT}
+                  alt="logo JAVASCRIPT"
+                  className="flex items-center w-fit h-[2em]"
+                />
+              </div>
             </div>
 
             <p className="py-4 text-white text-justify leading-6 px-6">
@@ -407,7 +421,7 @@ function ProjectsSection() {
               university (USCS).
             </p>
           </CardDescription>
-          <CardFooter className="flex-shrink-0 flex flex-col justify-center items-center w-full h-[3em]">
+          <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
             <a
               href="https://nikolasguedes.github.io/ExerciciosAlgoritmosUSCS/"
               target="_blank"
@@ -420,27 +434,29 @@ function ProjectsSection() {
             </a>
           </CardFooter>
         </Card>
-        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col">
-          <CardContent className="p-0 flex-shrink-0">
+        <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col max-sm:w-[330px]">
+          <CardContent className="p-2 flex-shrink-0 my-1">
             <ImageSwiper className="h-64 rounded-t-3xl " images={SEVENDAYS} />
           </CardContent>
-          <CardHeader className="flex-shrink-0">
+          <div className="flex-shrink-0 my-1">
             <CardTitle className="text-2xl font-semibold text-white">
               7-DAYS-OF-CODE
             </CardTitle>
-          </CardHeader>
-          <CardDescription className="flex-grow">
-            <div className="w-full flex items-center justify-start gap-x-4 px-6">
-              <img
-                src={HTML}
-                alt="logo HTML"
-                className="flex items-center w-fit h-[2em]"
-              />
-              <img
-                src={CSS}
-                alt="logo CSS"
-                className="flex items-center w-fit h-[2em]"
-              />
+          </div>
+          <CardDescription className="flex-grow mt-3">
+            <div className="w-full flex items-center justify-center gap-x-4 px-6">
+              <div className="flex gap-x-8 px-4 py-2 rounded-2xl bg-[var(--CorQuartenaria)]">
+                <img
+                  src={HTML}
+                  alt="logo HTML"
+                  className="flex items-center w-fit h-[2em]"
+                />
+                <img
+                  src={CSS}
+                  alt="logo CSS"
+                  className="flex items-center w-fit h-[2em]"
+                />
+              </div>
             </div>
 
             <p className="py-4 text-white text-justify leading-6 px-6">
@@ -448,7 +464,7 @@ function ProjectsSection() {
               website landing page for a fictional company.
             </p>
           </CardDescription>
-          <CardFooter className="flex-shrink-0 flex flex-col justify-center items-center w-full h-[3em]">
+          <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
             <a
               href="https://site-desafio-7-days-of-code.vercel.app/"
               target="_blank"

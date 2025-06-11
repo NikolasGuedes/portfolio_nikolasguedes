@@ -47,7 +47,7 @@ function SkillsSection() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className="px-4 py-2 border self-start border-[var(--CorPrimaria)] rounded-3xl"
+          className="px-4 py-2 border-2 self-start border-[var(--CorPrimaria)] rounded-3xl"
         >
           I have knowledge in:
         </motion.p>
