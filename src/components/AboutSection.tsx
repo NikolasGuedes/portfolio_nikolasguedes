@@ -40,7 +40,7 @@ function AboutSection() {
           <img
             src={Foto_Perfil}
             alt="Foto Perfil"
-            className="w-36 h-36 md:w-48 md:h-48 rounded-full border-2 border-white object-cover"
+            className="w-36 h-36 md:w-52 md:h-52 rounded-full"
           />
           <div className="text-center">
             <p className="text-white text-sm">Based in:</p>
