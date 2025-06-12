@@ -62,6 +62,15 @@ function ProjectsSection() {
     }
   }, [isInView1]);
 
+  // Função para rastrear cliques nos projetos
+  const handleProjectClick = (projectName: string, link: string) => {
+    // Track project clicks
+    if (window.Analytics) {
+      window.Analytics.trackEvent('Projetos', 'Clique', projectName);
+    }
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
+
   const OLI = [OLI_01, OLI_02, OLI_03, OLI_04];
   const TAREFINHAS = [TAR_01, TAR_02, TAR_03, TAR_04];
   const PORTFOLIO = [PORT_01, PORT_02, PORT_03];
@@ -125,16 +134,14 @@ function ProjectsSection() {
             </p>
           </CardDescription>
           <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
-            <a
-              href="https://store.steampowered.com/app/1794530/OLI/?l=english"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => handleProjectClick('OLI Game', 'https://store.steampowered.com/app/1794530/OLI/?l=english')}
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
                className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
-            </a>
+            </button>
           </CardFooter>
         </Card>
         <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col max-sm:w-[330px]">
@@ -172,16 +179,14 @@ function ProjectsSection() {
             </p>
           </CardDescription>
           <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
-            <a
-              href="https://nikolasguedes.github.io/portfolio_nikolasguedes/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => handleProjectClick('Portfolio Website', 'https://nikolasguedes.github.io/portfolio_nikolasguedes/')}
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
               className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
-            </a>
+            </button>
           </CardFooter>
         </Card>
         <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col max-sm:w-[330px]">
@@ -220,16 +225,14 @@ function ProjectsSection() {
             </p>
           </CardDescription>
           <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
-            <a
-              href="https://tarefinhas-navy.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => handleProjectClick('Tarefinhas App', 'https://tarefinhas-navy.vercel.app/')}
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
               className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
-            </a>
+            </button>
           </CardFooter>
         </Card>
         <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col max-sm:w-[330px]">
@@ -271,16 +274,14 @@ function ProjectsSection() {
             </p>
           </CardDescription>
           <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
-            <a
-              href="https://github.com/NikolasGuedes/TarefinhasV2"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => handleProjectClick('Tarefinhas V2', 'https://github.com/NikolasGuedes/TarefinhasV2')}
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
               className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
-            </a>
+            </button>
           </CardFooter>
         </Card>
         <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col max-sm:w-[330px]">
@@ -323,16 +324,14 @@ function ProjectsSection() {
             </p>
           </CardDescription>
           <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
-            <a
-              href="https://nikolasguedes.github.io/Site_jokenpo_kemon/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => handleProjectClick('JoKenPô Kemon', 'https://nikolasguedes.github.io/Site_jokenpo_kemon/')}
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
               className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
-            </a>
+            </button>
           </CardFooter>
         </Card>
         <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col max-sm:w-[330px]">
@@ -371,16 +370,14 @@ function ProjectsSection() {
             </p>
           </CardDescription>
           <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
-            <a
-              href="https://site-nkstudiogames.vercel.app/index.html#home"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => handleProjectClick('NKStudio Website', 'https://site-nkstudiogames.vercel.app/index.html#home')}
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
               className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
             >
               Project Link
-            </a>
+            </button>
           </CardFooter>
         </Card>
         <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col max-sm:w-[330px]">
@@ -422,16 +419,14 @@ function ProjectsSection() {
             </p>
           </CardDescription>
           <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
-            <a
-              href="https://nikolasguedes.github.io/ExerciciosAlgoritmosUSCS/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => handleProjectClick('Algorithm Exercices', 'https://nikolasguedes.github.io/ExerciciosAlgoritmosUSCS/')}
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
               className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl  text-center"
             >
               Project Link
-            </a>
+            </button>
           </CardFooter>
         </Card>
         <Card className="w-[370px] h-[580px] border bg-[var(--CorPrimaria)] rounded-3xl  flex flex-col max-sm:w-[330px]">
@@ -465,16 +460,14 @@ function ProjectsSection() {
             </p>
           </CardDescription>
           <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
-            <a
-              href="https://site-desafio-7-days-of-code.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => handleProjectClick('7 Days of Code', 'https://site-desafio-7-days-of-code.vercel.app/')}
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
               className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl  text-center"
             >
               Project Link
-            </a>
+            </button>
           </CardFooter>
         </Card>
       </motion.div>

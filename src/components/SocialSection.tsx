@@ -7,6 +7,14 @@ import { motion } from "motion/react";
 function SocialSection() {
   const { setCursorVariant } = useCursor();
 
+  const handleSocialClick = (socialName: string, link: string) => {
+    // Track social media clicks
+    if (window.Analytics) {
+      window.Analytics.trackEvent('Social Media', 'Clique', socialName);
+    }
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,20 +25,20 @@ function SocialSection() {
     >
       <nav className="flex flex-row items-center w-full justify-center gap-12">
         {[
-          { icon: Github_Icon, link: "https://github.com/NikolasGuedes" },
-          { icon: Linkdin_Icon, link: "https://www.linkedin.com/in/nikolas-guedes-da-silva-6497541a1/" },
-          { icon: Instagran_Icon, link: "https://www.instagram.com/guedes_nk/" }
+          { icon: Github_Icon, link: "https://github.com/NikolasGuedes", name: "GitHub" },
+          { icon: Linkdin_Icon, link: "https://www.linkedin.com/in/nikolas-guedes-da-silva-6497541a1/", name: "LinkedIn" },
+          { icon: Instagran_Icon, link: "https://www.instagram.com/guedes_nk/", name: "Instagram" }
         ].map((item, index) => (
-          <a href={item.link} target="_blank" rel="noopener noreferrer" key={index}>
+          <div key={index} onClick={() => handleSocialClick(item.name, item.link)}>
             <motion.img
               src={item.icon}
-              alt="Social Icon"
+              alt={`${item.name} Icon`}
               className="flex items-center w-fit h-[2em] cursor-pointer"
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
               whileHover={{ y: -5 }}
             />
-          </a>
+          </div>
         ))}
       </nav>
     </motion.div>

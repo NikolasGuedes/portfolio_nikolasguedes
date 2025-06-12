@@ -9,7 +9,20 @@ function HeaderPage() {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+      
+      // Track navigation events
+      if (window.Analytics) {
+        window.Analytics.trackEvent('Navegação', 'Clique', `Seção ${sectionId}`);
+      }
     }
+  };
+
+  const handleLogoClick = () => {
+    // Track logo click
+    if (window.Analytics) {
+      window.Analytics.trackEvent('Navegação', 'Clique', 'Logo Home');
+    }
+    scrollToSection("HOME");
   };
 
   return (
@@ -22,7 +35,7 @@ function HeaderPage() {
     >
       <nav className="flex flex-row items-center w-full justify-between gap-10">
         <img
-          onClick={() => scrollToSection("HOME")}
+          onClick={handleLogoClick}
           onMouseEnter={() => setCursorVariant("sm")}
           onMouseLeave={() => setCursorVariant("default")}
           src={Logo_NK}
