@@ -1,4 +1,4 @@
-import Foto_Perfil from "../img/Foto_Perfil.png";
+import Foto_Perfil from "@/img/Foto_Perfil.png";
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
 

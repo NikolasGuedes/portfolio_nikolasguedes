@@ -180,7 +180,7 @@ function ProjectsSection() {
           </CardDescription>
           <CardFooter className="flex-shrink-0 my-1 flex flex-col justify-center items-center w-full h-[3em]">
             <button
-              onClick={() => handleProjectClick('Portfolio Website', 'https://nikolasguedes.github.io/portfolio_nikolasguedes/')}
+              onClick={() => handleProjectClick('Portfolio Website', '/')}
               onMouseEnter={() => setCursorVariant("sm")}
               onMouseLeave={() => setCursorVariant("default")}
               className="px-4 py-2 w-[60%] hover:w-[80%] transition-all duration-300 border border-white mb-10 text-white hover:text-[var(--CorPrimaria)] hover:bg-white bg-[var(--CorPrimaria)] rounded-3xl "
